@@ -1,7 +1,10 @@
 
+type ButtonProps = {
+    label: string;
+};
 
-function Button(props) {
-    return <button> props.label</button>
+function Button({label} : ButtonProps) {
+    return <button> {label}</button>
 }
 
 export default Button;

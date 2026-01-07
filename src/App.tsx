@@ -4,14 +4,16 @@ import Header from './components/Header';
 
 function App() {
  
+  const options = ['start', 'middle', 'end']
   return (
     <>
       <Header />
-      <Button  />
-      <Button />
-      <Button />
+      {options.map((label) => (
+        <Button key={label} label={label} />
+      ))}
+
     </>
-  )
+  );
     
 }
 
